@@ -15,6 +15,7 @@ dotnet --list-sdks
 dotnet new globaljson --sdk-version 6.0.100
 ```
 
+global.json
 ```json
 {
   "sdk": {
