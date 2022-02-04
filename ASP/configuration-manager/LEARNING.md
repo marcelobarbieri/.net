@@ -90,7 +90,7 @@ launchSettings.json
 }
 ```
 
-Criar chave **Env** e adicionar seu respectivo valor
+### Criar chave **Env** e adicionar seu respectivo valor
 
 appsettings.json
 ```json
@@ -150,6 +150,8 @@ app.MapGet("/",() => app.Configuration.GetValue<string>("Env"));
 app.Run();
 ```
 
+### Development
+  
 ```ps
 dotnet run  
 ```
@@ -168,6 +170,8 @@ info: Microsoft.Hosting.Lifetime[0]
       Content root path: C:\DEV\.NET\ASP\configuration-manager\  
 ```
 
+### Production
+  
 ```ps
 dotnet build -c Release  
 ```
@@ -221,4 +225,7 @@ info: Microsoft.Hosting.Lifetime[0]
 info: Microsoft.Hosting.Lifetime[0]
       Content root path: C:\DEV\.NET\ASP\configuration-manager\bin\Release\net6.0\publish\  
 ```
+  
+# GetSection
+  
   
