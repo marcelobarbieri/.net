@@ -228,9 +228,9 @@ info: Microsoft.Hosting.Lifetime[0]
   
 # GetSection
   
-Criar nova pasta e arquivo
-  
+Criar nova pasta e arquivo:  
 Configurations/SmtpConfiguration.cs
+  
 ```c#
 public class SmtpConfiguration
 {
