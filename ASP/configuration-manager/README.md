@@ -1,6 +1,6 @@
 # ASP.NET Configuration Manager
 
-[Balta.io](https://balta.io/blog/aspnet-configuration-manager?utm_source=Discord&utm_campaign=social-to-blog&utm_content=aspnet-configuration-manager&utm_medium=social)
+[Balta.io](https://balta.io/blog/aspnet-configuration-manager?utm_source=Discord&utm_campaign=social-to-blog&utm_content=aspnet-configuration-manager&utm_medium=social) 04/02/2022
 
 Neste artigo vamos conferir as mudanças na leitura e carregamento das configurações que tivemos no ASP.NET 6.
 
