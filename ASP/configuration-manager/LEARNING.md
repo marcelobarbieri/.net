@@ -228,4 +228,72 @@ info: Microsoft.Hosting.Lifetime[0]
   
 # GetSection
   
+Criar nova pasta e arquivo
+  
+Configurations/SmtpConfiguration.cs
+```c#
+public class SmtpConfiguration
+{
+    public string Host { get; set; }
+    public int Port { get; set; } = 25;
+    public string UserName { get; set; }
+    public string Password { get; set; }
+}
+```
+
+appsettings.Development.json  
+```json
+{
+  "SmtpConfiguration": {
+    "Host": "smtp.sendgrid.net",
+    "Port": "587",
+    "UserName": "apikey",
+    "Password": "suasenha"
+  },  
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  }
+}
+  
+```  
+  
+program.cs
+```c#
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+
+//app.MapGet("/", () => "Hello World!");
+
+app.MapGet("/", () => app.Configuration.GetValue<string>("Env"));
+
+var smtp = new Configuration.SmtpConfiguration();
+app.Configuration.GetSection("SmtpConfiguration").Bind(smtp);
+
+Console.WriteLine(smtp);
+
+app.Run();  
+```
+  
+```ps
+dotnet run  
+```  
+  
+```ps
+Compilando...
+Host: smtp.sendgrid.net Port: 587 Username: apikey Password: suasenha
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: https://localhost:7020
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5285
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\DEV\.NET\ASP\configuration-manager\  
+```  
+  
   
