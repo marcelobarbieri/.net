@@ -1,0 +1,5 @@
+C:\DEV\.NET\parallel\obj\Debug\net6.0\Parallel.csproj.AssemblyReference.cache
+C:\DEV\.NET\parallel\obj\Debug\net6.0\Parallel.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\.NET\parallel\obj\Debug\net6.0\Parallel.AssemblyInfoInputs.cache
+C:\DEV\.NET\parallel\obj\Debug\net6.0\Parallel.AssemblyInfo.cs
+C:\DEV\.NET\parallel\obj\Debug\net6.0\Parallel.csproj.CoreCompileInputs.cache
