@@ -1,5 +1,8 @@
+# ASP.NET Core APIs - Repository Pattern e Unit of Work
 
-[ASP.NET Core APIs - Repository Pattern e Unit of Work | por André Baltieri #balta](https://www.youtube.com/watch?v=HdsRpSK4PUg)
+> por André Baltieri #balta
+
+[Vídeo](https://www.youtube.com/watch?v=HdsRpSK4PUg)
 
 ```ps
 dotnet --list-dsks
@@ -42,7 +45,7 @@ namespace UnitOfWork.Models
 }
 ```
 
-### Repository Pattern
+## Repository Pattern
 
 Criar diretório *Repositories* e um repositório para cada modelo.
 
@@ -94,7 +97,34 @@ namespace UnitOfWork.Repositories
 }
 ```
 
+## Entity Framework
 
+Instalar pacote do Microsoft EntityFramework Core InMemory
+```ps
+dotnet add package microsoft.entityframeworkcore.inmemory --version 3.1.3
+```
+
+Criar diretório *Data* e contexto de dados
+
+```ps
+Data/
+    DataContext.cs
+``` 
+
+DataContext.cs
+```c#
+using Microsoft.EntityFrameworkCore;
+using UnitOfWork.Models;
+
+namespace UnitOfWork.Data
+{
+    public class DataContext : DbContext
+    {
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
+    }
+}
+```
 
 
 
