@@ -11,7 +11,7 @@ Classe Parallel
 - As tarefas são manipuladas pelos processadores lógicos (*Threads*) da máquina que está rodando a aplicação em si
 - Nasceu na versão 4.0 do .NET Framework
 
-![Distribuição de Núcleos](https://github.com/marcelobarbieri/.net/blob/main/paralelismo/assets/nucleos.png)
+![Distribuição de Núcleos](https://github.com/marcelobarbieri/.net/blob/main/parallel/assets/nucleos.png)
 
 ```ps
 dotnet new console
