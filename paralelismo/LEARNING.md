@@ -354,6 +354,15 @@ stopWatch.Stop();
 Console.WriteLine($"O Tempo de processamento total é de {stopWatch.ElapsedMilliseconds} ms");    
 ```    
 
+```ps
+dotnet run
+    
+Rua Dinamarca - Terceiro, Cuiabá/MT - 78015-818
+Rua Sergipe - Centro, Catanduva/SP - 15800-100
+Avenida José do Patrocínio - Cidade Industrial, Gurupi/TO - 77445-100
+Viela Eça - Conjunto Residencial Haroldo Veloso, Guarulhos/SP - 07155-081
+O Tempo de processamento total é de 677 ms    
+```    
 
 
 
