@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>configuration_manager</RootNamespace>
+    <UserSecretsId>3c898987-9332-4bff-a98a-f834f0784f02</UserSecretsId>
+  </PropertyGroup>
+
+</Project>

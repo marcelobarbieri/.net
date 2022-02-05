@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wScCMvenN+BvTfDVsb9pXgZj1ZwJOeREVrq30b5SXLs=",
+  "Source": "configuration-manager",
+  "BasePath": "_content/configuration-manager",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,8 @@
+C:\DEV\.NET\ASP\configuration-manager\bin\Release\net6.0\publish\configuration-manager.exe
+C:\DEV\.NET\ASP\configuration-manager\bin\Release\net6.0\publish\appsettings.Development.json
+C:\DEV\.NET\ASP\configuration-manager\bin\Release\net6.0\publish\appsettings.json
+C:\DEV\.NET\ASP\configuration-manager\bin\Release\net6.0\publish\global.json
+C:\DEV\.NET\ASP\configuration-manager\bin\Release\net6.0\publish\configuration-manager.dll
+C:\DEV\.NET\ASP\configuration-manager\bin\Release\net6.0\publish\configuration-manager.deps.json
+C:\DEV\.NET\ASP\configuration-manager\bin\Release\net6.0\publish\configuration-manager.runtimeconfig.json
+C:\DEV\.NET\ASP\configuration-manager\bin\Release\net6.0\publish\configuration-manager.pdb

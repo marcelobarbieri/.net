@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "iAOI3/SZqgB1sF3J5+esC5Xw6PvIsMvR7bMD3ji1iuk=",
+  "Source": "configuration-manager",
+  "BasePath": "_content/configuration-manager",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
