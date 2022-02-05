@@ -17,6 +17,8 @@ Classe Parallel
 dotnet new console
 ```
 
+## Sequencial 
+
 program.cs
 ```c#
 using System.Diagnostics;
@@ -33,20 +35,29 @@ Console.WriteLine($"O tempo de processamento total foi de {stopWatch.ElapsedMill
 
 void Processo1()
 {
-    Console.WriteLine("Processo 1 finalizado");
+    Console.WriteLine($"Processo 1 finalizado. Thread {Thread.CurrentThread.ManagedThreadId}");
+    Thread.Sleep(1000);
 }
 
 void Processo2()
 {
-    Console.WriteLine("Processo 2 finalizado");
+    Console.WriteLine($"Processo 2 finalizado. Thread {Thread.CurrentThread.ManagedThreadId}");
+    Thread.Sleep(1000);
 }
 
 void Processo3()
 {
-    Console.WriteLine("Processo 3 finalizado");
+    Console.WriteLine($"Processo 3 finalizado. Thread {Thread.CurrentThread.ManagedThreadId}");
+    Thread.Sleep(1000);
 }
+
 ```
 
 ```ps
 dotnet run
+
+Processo 1 finalizado. Thread 1
+Processo 2 finalizado. Thread 1
+Processo 3 finalizado. Thread 1
+O tempo de processamento total foi de 3043 ms
 ```
