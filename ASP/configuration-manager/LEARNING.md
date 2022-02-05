@@ -296,4 +296,79 @@ info: Microsoft.Hosting.Lifetime[0]
       Content root path: C:\DEV\.NET\ASP\configuration-manager\  
 ```  
   
+# Connection String
+  
+O arquivo de configuração possui uma sessão especial dedicada as **Connection Strings**, podendo ser definidas várias delas com uma leitura facilitada posteriormente. Abaixo um exemplo de como podemos armazenar uma **Connection String** no arquivo de configuração.
+  
+appsettings.Development.json  
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost,1433;Database=balta;User ID=sa;Password=1q2w3e4r@#$"
+  },
+  "Env": "development",
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  }
+}  
+```  
+ 
+Com a **Connection String** devidamente armazenada, podemos utilizar o método **Configuration.GetConnectionString** para procurá-la diretamente na sessão **ConnectionStrings** do arquivo de configuração, como mostrado abaixo.  
+  
+program.cs
+```c#
+...
+  var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");  
+...  
+```  
+
+*GetConnectionString is a shorthand for GetSection("ConnectionString")[name]*  
+
+*IMPORTANTE: Há maneiras melhores de armazenar dados sensíveis como cadeias de conexão sem ser no arquivo de configuração, como o **dotnet user secrets**. Tenha em mente que este arquivo será versionado junto ao projeto e ficará disponível no versionador de código da sua empresa.*
+  
+# UserSecrets
+  
+Instalar a extensão ".NET Core User Secrets" no VSCode
+  
+Clicar com o botão direito sobre o arquivo do projeto *.csproj e "Manage User Secrets" para criar o arquivo **secrets.json**
+ 
+```ps  
+dotnet user-secrets set configuration-manager-connection-string "Server=localhost,1433;Database=balta;User ID=sa;Password=1q2w3e4r@#$"
+```
+
+secrets.json
+```json
+{
+  "configuration-manager-connection-string": "Server=localhost,1433;Database=balta;User ID=sa;Password=1q2w3e4r@#$"
+}  
+```  
+
+Criar uma classe no projeto para acessar **secrets**
+
+Configuration/Secrets.cs
+```c#
+using System.Text.Json.Serialization;
+
+namespace Configuration;
+
+public class Secrets
+{
+    [JsonPropertyName("configuration-manager-connection-string")]
+    public string StringConnection { get; set; }
+} 
+```  
+  
+program.cs
+```c# 
+var secrets = builder.AddUserSecrets<Configuration.Secrets>();  
+```
+  
+  
+  
+  
+  
+  
   
