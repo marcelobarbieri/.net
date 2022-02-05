@@ -75,8 +75,10 @@ var acao3 = new Action(Processo3);
 var stopWatch = new Stopwatch();
 
 stopWatch.Start();
+
 // utilização do método Invoke() ao invés de executar os processos
 Parallel.Invoke(acao1, acao2, acao3);
+
 stopWatch.Stop();
 
 Console.WriteLine($"O tempo de processamento total foi de {stopWatch.ElapsedMilliseconds} ms");
@@ -108,5 +110,47 @@ Processo 3 finalizado. Thread 6.
 Processo 1 finalizado. Thread 1.
 O tempo de processamento total foi de 1016 ms
 ```
+
+### Exemplo com uso de API
+
+[ViaCEP](http://viacep.com.br/)
+
+[Exemplo de pesquisa](http://viacep.com.br/ws/01001000/json/)
+
+```json
+{
+  "cep": "01001-000",
+  "logradouro": "Praça da Sé",
+  "complemento": "lado ímpar",
+  "bairro": "Sé",
+  "localidade": "São Paulo",
+  "uf": "SP",
+  "ibge": "3550308",
+  "gia": "1004",
+  "ddd": "11",
+  "siafi": "7107"
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
