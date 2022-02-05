@@ -111,7 +111,7 @@ Processo 1 finalizado. Thread 1.
 O tempo de processamento total foi de 1016 ms
 ```
 
-### Exemplo com uso de API
+## Exemplo com uso de API
 
 [ViaCEP](http://viacep.com.br/)
 
@@ -197,7 +197,7 @@ namespace Paralelismo
 
 > [Gerador de CEP](https://www.4devs.com.br/gerador_de_cep)
 
-#### Programa sem utilizar *Parallel*
+### Programa sem utilizar *Parallel*
 
 Program.cs
 ```c#
@@ -237,7 +237,7 @@ Thread 1 -  Rua Dinamarca - Terceiro, Cuiabá/MT - 78015-818
 O Tempo de processamento total é de 2164 ms
 ```
 
-#### Programa com a utilização de *Parallel*
+### Programa com a utilização de *Parallel*
 
 Program.cs
 ```c#
@@ -277,7 +277,7 @@ Thread 1 -  Viela Eça - Conjunto Residencial Haroldo Veloso, Guarulhos/SP - 071
 O Tempo de processamento total é de 699 ms
 ```
 
-#### ParallelOptions
+### ParallelOptions
 
 Program.cs
 ```c#
@@ -320,7 +320,7 @@ Thread 7 -  Rua Dinamarca - Terceiro, Cuiabá/MT - 78015-818
 O Tempo de processamento total é de 681 ms
 ```
 
-#### List<CepModel>
+### List<CepModel>
     
 Program.cs    
 ```c#
