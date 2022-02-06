@@ -205,7 +205,7 @@ namespace UnitOfWork.Repositories
 }
 ```
 
-### Resolver dependências
+## Resolver dependências
 
 Registrar o contexto de dados como serviço pois foi utilizada injeção de dependência nos construtores dos repositórios criados.
 
@@ -235,7 +235,7 @@ Startup.cs
 ...
 ```
 
-### Controladores
+## Controladores
 
 Criar novo controlador
 
@@ -293,7 +293,7 @@ Por isso, o método *SaveChanges* que persiste todas as alterações realizados 
 
 Para resolver isso são utilizados as unidades de trabalho, ou *Unit of Work*
 
-### Unit Of Work
+## Unit Of Work
 
 Criar arquivo UnitOfWork.cs dentro do diretório Data/
 
@@ -454,7 +454,7 @@ namespace UnitOfWork.Controllers
 }
 ```
 
-### Executar
+## Executar
 
 ```ps
 dotnet run
@@ -471,7 +471,7 @@ info: Microsoft.Hosting.Lifetime[0]
       Content root path: C:\DEV\.NET\unit-of-work
 ```
 
-### Postman
+## Postman
 
 POST    https://localhost:5001/v1/orders
 
