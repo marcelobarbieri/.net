@@ -118,8 +118,15 @@ using UnitOfWork.Models;
 
 namespace UnitOfWork.Data
 {
-    public class DataContext : DbContext
+    public class DataContext : DbContext    
     {
+        public DataContext(DbContextOptions<DataContext> options)
+            : base(options)
+        {
+
+        }
+            
+    
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
     }
@@ -246,6 +253,8 @@ namespace UnitOfWork.Controllers
     [Route("v1/orders")]
     public class OrderController : ControllerBase
     {
+        [HttpPost]
+        [Route("")]    
         public Order Post(
             [FromServices] ICustomerRepository customerRepository,
             [FromServices] IOrderRepository orderRepository
@@ -445,10 +454,38 @@ namespace UnitOfWork.Controllers
 }
 ```
 
+### Executar
 
+```ps
+dotnet run
 
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\DEV\.NET\unit-of-work
+```
 
+### Postman
 
+POST    https://localhost:5001/v1/orders
+
+```json
+{
+    "id": 1,
+    "number": "123",
+    "customerId": 1,
+    "customer": {
+        "id": 1,
+        "name": "André Baltieri"
+    }
+}
+```
 
 
 
