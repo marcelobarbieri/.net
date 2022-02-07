@@ -1,0 +1,197 @@
+<channel>
+	<item>
+		<title>EF Core - Migrations : Ferramentas do CLI</title>
+		<link>http://www.macoratti.net/21/03/efc_migra1.htm</link>
+		<pubDate>3/1/2022</pubDate>
+	</item>
+	<item>
+		<title>ASP.NET Core - Criando uma API Gateway com Ocelot - I</title>
+		<link>http://www.macoratti.net/21/04/aspc_apigocel1.htm</link>
+		<pubDate>4/1/2022</pubDate>
+	</item>
+	<item>
+		<title>C# - Apresentando Claims</title>
+		<link>http://www.macoratti.net/21/03/c_claims1.htm</link>
+		<pubDate>5/1/2022</pubDate>
+	</item>
+	<item>
+		<title>VS Code - Sete Extensões para o desenvolvimento Front-End</title>
+		<link>http://www.macoratti.net/21/04/vscode_extfe1.htm</link>
+		<pubDate>6/1/2022</pubDate>
+	</item>
+	<item>
+		<title>C# - Padrão Comportamental Gof - Interpreter</title>
+		<link>http://www.macoratti.net/21/11/c_interpreter1.htm</link>
+		<pubDate>7/1/2022</pubDate>
+	</item>
+	<item>
+		<title>LINQ - Os novos métodos para operações com conjuntos (.NET 6)</title>
+		<link>http://www.macoratti.net/22/01/vda050122.htm</link>
+		<pubDate>5/1/2022</pubDate>
+	</item>
+	<item>
+		<title>Blazor - Visualizador de PDF</title>
+		<link>http://www.macoratti.net/22/01/vda100122.htm</link>
+		<pubDate>10/1/2022</pubDate>
+	</item>
+	<item>
+		<title>Visual Studio - Diferenças entre Build, Rebuild e Clean</title>
+		<link>http://www.macoratti.net/21/04/vs_cbreb1.htm</link>
+		<pubDate>10/1/2022</pubDate>
+	</item>
+	<item>
+		<title>ASP.NET Core - Criando uma API Gateway com Ocelot - II</title>
+		<link>http://www.macoratti.net/21/04/aspc_apigocel2.htm</link>
+		<pubDate>11/1/2022</pubDate>
+	</item>
+	<item>
+		<title>.NET - Estrutura de dados : conceitos básicos</title>
+		<link>http://www.macoratti.net/21/04/c_dadestr1.htm</link>
+		<pubDate>12/1/2022</pubDate>
+	</item>
+	<item>
+		<title>C# - Padrão Comportamental Gof - Iterator</title>
+		<link>http://www.macoratti.net/21/11/c_iterator1.htm</link>
+		<pubDate>13/1/2022</pubDate>
+	</item>
+	<item>
+		<title>.NET MAUI Blazor - Criando aplicações híbridas multiplataforma</title>
+		<link>http://www.macoratti.net/21/11/netmaui_blz1.htm</link>
+		<pubDate>14/1/2022</pubDate>
+	</item>
+	<item>
+		<title>Blazor - Apresentando a biblioteca Radzen.Blazor </title>
+		<link>http://www.macoratti.net/22/01/vda120122.htm</link>
+		<pubDate>12/1/2022</pubDate>
+	</item>
+	<item>
+		<title>ASP.NET Core MVC - Criando um Portfólio - I</title>
+		<link>http://www.macoratti.net/22/01/vda170122.htm</link>
+		<pubDate>17/1/2022</pubDate>
+	</item>
+	<item>
+		<title>.NET - Diferenças entre Domain e Domain model</title>
+		<link>http://www.macoratti.net/21/04/c_domaindifs.htm</link>
+		<pubDate>17/1/2022</pubDate>
+	</item>
+	<item>
+		<title>ASP.NET Core - Implementando Captcha</title>
+		<link>http://www.macoratti.net/21/04/aspc_captcha1.htm</link>
+		<pubDate>18/1/2022</pubDate>
+	</item>
+	<item>
+		<title>EF Core - Usando ToQueryString() para obter o SQL gerado</title>
+		<link>http://www.macoratti.net/21/05/ef_sqlger1.htm</link>
+		<pubDate>19/1/2022</pubDate>
+	</item>
+	<item>
+		<title>REST - Níveis de maturidade de Richardson</title>
+		<link>http://www.macoratti.net/21/07/net_restmat1.htm</link>
+		<pubDate>20/1/2022</pubDate>
+	</item>
+	<item>
+		<title>Xamarin Forms - Apresentando o recurso MultiBinding</title>
+		<link>http://www.macoratti.net/21/05/xf_multbind1.htm</link>
+		<pubDate>21/1/2022</pubDate>
+	</item>
+	<item>
+		<title>Blazor - Mestre-Detalhes com Radzen.Blazor </title>
+		<link>http://www.macoratti.net/22/01/vda190122.htm</link>
+		<pubDate>19/1/2022</pubDate>
+	</item>
+	<item>
+		<title>Blazor - Realizando o CRUD com Dapper</title>
+		<link>http://www.macoratti.net/22/01/vda240122.htm</link>
+		<pubDate>24/1/2022</pubDate>
+	</item>
+	<item>
+		<title>ASP.NET Core API - Tratamento de erros com UseExceptionHandler </title>
+		<link>http://www.macoratti.net/21/04/aspc_errglobl1.htm</link>
+		<pubDate>25/1/2022</pubDate>
+	</item>
+	<item>
+		<title> C# 10 - Novidades na API Math</title>
+		<link>http://www.macoratti.net/22/01/c10_mathapi1.htm</link>
+		<pubDate>26/1/2022</pubDate>
+	</item>
+	<item>
+		<title>C# - Histórico dos recursos de cada versão</title>
+		<link>http://www.macoratti.net/21/04/c_vershist1.htm</link>
+		<pubDate>27/1/2022</pubDate>
+	</item>
+	<item>
+		<title>Blazor - Despesas Pessoais com Gráfico de Barras e Pizza - I</title>
+		<link>http://www.macoratti.net/21/05/blz_fin1.htm</link>
+		<pubDate>28/1/2022</pubDate>
+	</item>
+	<item>
+		<title>Blazor - Apresentando Componentes Dinâmicos</title>
+		<link>http://www.macoratti.net/22/01/vda260122.htm</link>
+		<pubDate>26/1/2022</pubDate>
+	</item>
+	<item>
+		<title>.NET Core - Injeção de dependência</title>
+		<link>http://www.macoratti.net/22/01/vda310122.htm</link>
+		<pubDate>31/1/2022</pubDate>
+	</item>
+	<item>
+		<title>C# - Substituindo instruções if/else/switch </title>
+		<link>http://www.macoratti.net/21/06/c_condfact1.htm</link>
+		<pubDate>31/1/2022</pubDate>
+	</item>
+	<item>
+		<title>EF Core 5.0 - Filtered Included e Backing Fields</title>
+		<link>http://www.macoratti.net/21/05/ef5_news1.htm</link>
+		<pubDate>2/2/2022</pubDate>
+	</item>
+	<item>
+		<title>Xamarin Forms - Apresentando os modos Dark e Light</title>
+		<link>http://www.macoratti.net/21/05/xf_darklight1.htm</link>
+		<pubDate>4/2/2022</pubDate>
+	</item>
+	<item>
+		<title>C# - 5 Dicas para escrever um Código Limpo - I</title>
+		<link>http://www.macoratti.net/21/04/c_codelimpo1.htm</link>
+		<pubDate>3/2/2022</pubDate>
+	</item>
+	<item>
+		<title>ASP .NET Core - Compreendendo o modelo Host Generic</title>
+		<link>http://www.macoratti.net/21/05/aspc_genhost1.htm</link>
+		<pubDate>1/2/2022</pubDate>
+	</item>
+	<item>
+		<title>ASP.NET Core - Fazendo o Deploy no Heroku</title>
+		<link>http://www.macoratti.net/22/02/vda020222.htm</link>
+		<pubDate>2/2/2022</pubDate>
+	</item>
+	<item>
+		<title>ASP.NET Core - Criando Minimal APIs</title>
+		<link>http://www.macoratti.net/22/02/vda070222.htm</link>
+		<pubDate>7/2/2022</pubDate>
+	</item>
+	<item>
+		<title>C# - Apresentando o recurso Target-typed new expressions</title>
+		<link>http://www.macoratti.net/21/05/c_newexpr1.htm</link>
+		<pubDate>7/2/2022</pubDate>
+	</item>
+	<item>
+		<title>ASP.Net Core - Padrão repositório e Unit of Work com Dapper</title>
+		<link>http://www.macoratti.net/21/07/netcore_reptrandapp1.htm</link>
+		<pubDate>8/2/2022</pubDate>
+	</item>
+	<item>
+		<title>C# - Padrão Comportamental Gof - Interpreter</title>
+		<link>http://www.macoratti.net/21/11/c_interpreter1.htm</link>
+		<pubDate>9/2/2022</pubDate>
+	</item>
+	<item>
+		<title>EF Core - Usando a extensão SQL Server no VS Code</title>
+		<link>http://www.macoratti.net/21/07/efc_vscsql1.htm</link>
+		<pubDate>10/2/2022</pubDate>
+	</item>
+	<item>
+		<title>Xamarin Forms - Incluindo um prompt de rolagem (Scroll)</title>
+		<link>http://www.macoratti.net/21/09/xf_scrolling.htm</link>
+		<pubDate>11/2/2022</pubDate>
+	</item>
+</channel>
