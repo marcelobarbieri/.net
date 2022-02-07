@@ -1,15 +1,5 @@
 <channel>
 	<item>
-		<title>EF Core - Migrations : Ferramentas do CLI</title>
-		<link>http://www.macoratti.net/21/03/efc_migra1.htm</link>
-		<pubDate>3/1/2022</pubDate>
-	</item>
-	<item>
-		<title>ASP.NET Core - Criando uma API Gateway com Ocelot - I</title>
-		<link>http://www.macoratti.net/21/04/aspc_apigocel1.htm</link>
-		<pubDate>4/1/2022</pubDate>
-	</item>
-	<item>
 		<title>C# - Apresentando Claims</title>
 		<link>http://www.macoratti.net/21/03/c_claims1.htm</link>
 		<pubDate>5/1/2022</pubDate>
