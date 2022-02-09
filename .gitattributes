@@ -1,1 +1,12 @@
 *.cs linguist-language=C#
+
+# Github is wrong and maybe it's your fault (27/01/2022) @Lucas Massena
+# https://www.linkedin.com/pulse/github-wrong-maybe-its-your-fault-lucas-massena-/
+# Example of a `.gitattributes` file which reclassifies the files as csharp
+*.cs linguist-language=csharp
+*.csproj linguist-language=csharp
+*.sln linguist-language=csharp
+# And ignore those repositories considering them as documentation
+src/*/wwwroot/* linguist-documentation
+wwwroot/** linguist-documentation
+*/bin/* linguist-documentation
