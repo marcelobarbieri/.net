@@ -6,6 +6,8 @@
 
 > [Migrations : Ferramentas do CLI](./migrations)
 
+> [Paralelismo](./paralel)
+
 > [Utilizando ILogger no ASP.NET](./ilogger)
 
 > [Visão geral do global.json](./global-json)
