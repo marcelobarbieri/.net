@@ -8,6 +8,8 @@
 
 > [Paralelismo](./paralel)
 
+> [Unit of Work](./unit-of-work)
+
 > [Utilizando ILogger no ASP.NET](./ilogger)
 
 > [Visão geral do global.json](./global-json)
