@@ -4,9 +4,11 @@
 
 > [Executando processamentos em segundo plano no .NET com o Hangfire](./hangfire)
 
-> [Visão geral do global.json](./global-json)
+> [Migrations : Ferramentas do CLI](./migrations)
 
 > [Utilizando ILogger no ASP.NET](./ilogger)
+
+> [Visão geral do global.json](./global-json)
 
 #
 
