@@ -21,6 +21,12 @@ Você pode utilizar o Hangfire independente da plataforma para a qual está prog
 - .NET Core 1.0 (Ou posterior);
 - Qualquer plataforma compatível com .NET Standard 1.3.
 
+## Criando o projeto
+
+```ps
+dotnet new webapi -o . -n Hangfire
+```
+
 ## Instalando o Hangfire
 
 Você pode adicionar o Hangfire ao seu projeto a partir dos pacotes distribuídos no NuGet. Se você simplesmente entrar no NuGet e pesquisar por Hangfire verá que existem várias extensões que fornecem uma série que recursos ou implementam novas abstrações úteis à biblioteca, mas não entrarei em detalhes das demais aqui, apenas saiba que elas existem e caso precise você encontra uma relação e um overview destas extensões na documentação da biblioteca.
@@ -35,7 +41,7 @@ dotnet add package Hangfire.AspNetCore
 Além destes, talvez você queira utilizar um armazenamento persistente para armazenar suas tarefas. No exemplo deste artigo utilizarei o Sqlite, mas você encontra a lista de storages disponíveis aqui.
 
 ```ps
-Hangfire.Storage.SQLite
+dotnet add package Hangfire.Storage.SQLite
 ```
 
 ## Configurando sua aplicação
@@ -125,7 +131,7 @@ O código fonte desta aplicação de demonstração está disponível no [Github
 Com tudo que fizemos até aqui já podemos executar nossa aplicação e ver o Hangfire em ação! Para isso, execute o comando para inicializar a aplicação a partir da pasta do projeto criado:
 
 ```ps
-dotnet run
+dotnet watch run
 ```
 
 Assim que a aplicação subir você já verá algumas informações sobre o Hangfire e os logs gerados pelas jobs de disparo imediato implementadas:
@@ -133,14 +139,56 @@ Assim que a aplicação subir você já verá algumas informações sobre o Hang
 Log do terminal executando a aplicação
 
 ```ps
-
+watch : Hot reload enabled. For a list of supported edits, see https://aka.ms/dotnet/hot-reload. Press "Ctrl + R" to restart.
+watch : Building...
+  Determinando os projetos a serem restaurados...
+  Todos os projetos estão atualizados para restauração.
+  Hangfire -> C:\DEV\.Net\hangfire\bin\Debug\net6.0\Hangfire.dll
+watch : Started
+info: Hangfire.BackgroundJobServer[0]
+      Starting Hangfire Server using job storage: 'Connection string: Hangfire.db,  prefix: hangfire'
+info: Hangfire.BackgroundJobServer[0]
+      Using the following options for Hangfire Server:
+          Worker count: 20
+          Listening queues: 'default'
+          Shutdown timeout: 00:00:15
+          Schedule polling interval: 00:00:15
+info: Hangfire.Server.BackgroundServerProcess[0]
+      Server barbieri:7844:9e50d43b successfully announced in 23,1252 ms
+info: Hangfire.Server.BackgroundServerProcess[0]
+      Server barbieri:7844:9e50d43b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+info: Hangfire.Server.BackgroundServerProcess[0]
+      Server barbieri:7844:9e50d43b all the dispatchers started
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: https://localhost:7132
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5028
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\DEV\.Net\hangfire\
+Job fire-and-forget pai!
+Job Fire-and-forget!
+Job recorrente gerou um número ímpar
+Job continuation! (Job pai: 17)
+Job recorrente gerou um número ímpar
+Job recorrente gerou um número ímpar
+Job Delayed: 2 minutos após o início da aplicação
 ```
 
 ### Acessando o Dashboard
 
-O Dashboard do Hangfire pode ser acessado por meio da URL **http://localhost:5000/hangfire**. Logo no início ele nos exibe um painel de monitoramento das jobs executadas, e navegando pelas seções você encontra funcionalidades que permitem gerenciar a execução das jobs.
+O Dashboard do Hangfire pode ser acessado por meio da URL **https://localhost:7132/hangfire**. Logo no início ele nos exibe um painel de monitoramento das jobs executadas, e navegando pelas seções você encontra funcionalidades que permitem gerenciar a execução das jobs.
 
-Dashboard do hangfire
+![Painel](./assets/painel.png)
+![Dashboard](./assets/dashboard.png)
+![Tarefas](./assets/tarefas.png)
+![Detalhe da Tarefa](./assets/tarefas-detalhe.png)
+![Tarefas Recorrentes](./assets/tarefas-recorrentes.png)
+![Servidores](./assets/servidores.png)
+![Terminal](./assets/terminal.png)
 
 - Seção **Tarefas**: Lista as tarefas em execução, agendadas ou do histórico de acordo com seu status (enfileirada, agendada, em execução (processando), concluída, em falha, removida, aguardando). Para voltar a executar uma tarefa do histórico basta selecioná-la e clicar em "Tarefas enfileiradas".
 
