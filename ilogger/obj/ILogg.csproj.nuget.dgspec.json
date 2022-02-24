@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DEV\\.NET\\ilogger\\ILogg.csproj": {}
+    "C:\\DEV\\.Net\\ilogger\\ILogg.csproj": {}
   },
   "projects": {
-    "C:\\DEV\\.NET\\ilogger\\ILogg.csproj": {
+    "C:\\DEV\\.Net\\ilogger\\ILogg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEV\\.NET\\ilogger\\ILogg.csproj",
+        "projectUniqueName": "C:\\DEV\\.Net\\ilogger\\ILogg.csproj",
         "projectName": "ILogg",
-        "projectPath": "C:\\DEV\\.NET\\ilogger\\ILogg.csproj",
+        "projectPath": "C:\\DEV\\.Net\\ilogger\\ILogg.csproj",
         "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
-        "outputPath": "C:\\DEV\\.NET\\ilogger\\obj\\",
+        "outputPath": "C:\\DEV\\.Net\\ilogger\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

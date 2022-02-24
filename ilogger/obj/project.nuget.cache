@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R39kAeSDYkHb6wXROe4jlIM++Dc+Lz4V8lPdZoHQ6e6mhfrIoOSpLEWkFPJdCZ3fz99SCa1xtgZ+FQvZS+osfw==",
+  "dgSpecHash": "ePNSjDc4YUXe1zn8zHz40QNfjMJ7DVY4ta6imLdFZFsl3Z9GM0+ZfOhozUlCULwIGkhgxtnDishllO1bHaK+Ug==",
   "success": true,
-  "projectFilePath": "C:\\DEV\\.NET\\ilogger\\ILogg.csproj",
+  "projectFilePath": "C:\\DEV\\.Net\\ilogger\\ILogg.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
