@@ -169,13 +169,6 @@ info: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Development
 info: Microsoft.Hosting.Lifetime[0]
       Content root path: C:\DEV\.Net\hangfire\
-Job fire-and-forget pai!
-Job Fire-and-forget!
-Job recorrente gerou um número ímpar
-Job continuation! (Job pai: 17)
-Job recorrente gerou um número ímpar
-Job recorrente gerou um número ímpar
-Job Delayed: 2 minutos após o início da aplicação
 ```
 
 ### Acessando o Dashboard
@@ -183,11 +176,17 @@ Job Delayed: 2 minutos após o início da aplicação
 O Dashboard do Hangfire pode ser acessado por meio da URL **https://localhost:7132/hangfire**. Logo no início ele nos exibe um painel de monitoramento das jobs executadas, e navegando pelas seções você encontra funcionalidades que permitem gerenciar a execução das jobs.
 
 ![Painel](./assets/painel.png)
+
 ![Dashboard](./assets/dashboard.png)
+
 ![Tarefas](./assets/tarefas.png)
+
 ![Detalhe da Tarefa](./assets/tarefas-detalhe.png)
+
 ![Tarefas Recorrentes](./assets/tarefas-recorrentes.png)
+
 ![Servidores](./assets/servidores.png)
+
 ![Terminal](./assets/terminal.png)
 
 - Seção **Tarefas**: Lista as tarefas em execução, agendadas ou do histórico de acordo com seu status (enfileirada, agendada, em execução (processando), concluída, em falha, removida, aguardando). Para voltar a executar uma tarefa do histórico basta selecioná-la e clicar em "Tarefas enfileiradas".
