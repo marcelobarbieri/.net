@@ -4,7 +4,7 @@
 
 > [Executando processamentos em segundo plano no .NET com o Hangfire](./hangfire)
 
-
+> [Visão geral do global.json](./global-json)
 
 #
 
