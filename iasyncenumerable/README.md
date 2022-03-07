@@ -62,6 +62,40 @@ Note que temos apenas um retorno do tipo **IAsyncEnumerable<int>**, em seguida r
 
 Não há necessidade de configurar nenhuma informação adicional aqui, apenas retornar um **IAsyncEnumerable** já basta.
 
+## Exemplo
+
+Rotinas inseridas no controlador **Data**:
+
+```c#
+using Exemplo;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Exemplo.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+
+    public class DataController : Controller
+    {
+        [HttpGet("/")]
+        public IAsyncEnumerable<int> Get()
+        {
+            IAsyncEnumerable<int> value = GetData();
+            return value;
+        }
+
+        private static async IAsyncEnumerable<int> GetData()
+        {
+            for (var i = 1; i <= 1000; i++)
+            {
+                await Task.Delay(1000);
+                yield return i;
+            }
+        }
+    }
+}
+```
+
 ## Conclusão
 
 Podemos utilizar o **IAsyncEnumerable** para enviar dados para tela ou outras interfaces no formato de Stream de forma simples e fácil no ASP.NET 6.
