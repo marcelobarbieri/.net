@@ -20,12 +20,6 @@ Você provavelmente já viu a palavra **yeld** em algum código C#, e sua tradu�
 yield return 1000;
 ```
 
-## Criação do projeto
-
-```ps
-dotnet new web -o . -n Exemplo
-```
-
 ## Utilizando IAsyncEnumerable
 
 Sabendo que com o **yield** podemos retornar uma informação sem necessariamente finalizar a execução do método, podemos usar o **IAsyncEnumerable** para criar uma lista assíncrona.
