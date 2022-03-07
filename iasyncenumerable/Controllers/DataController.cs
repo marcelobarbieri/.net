@@ -8,11 +8,6 @@ namespace Exemplo.Controllers
 
     public class DataController : Controller
     {
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
-
         [HttpGet("/")]
         public IAsyncEnumerable<int> Get()
         {
