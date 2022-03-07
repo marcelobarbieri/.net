@@ -62,6 +62,8 @@ Note que temos apenas um retorno do tipo **IAsyncEnumerable<int>**, em seguida r
 
 Não há necessidade de configurar nenhuma informação adicional aqui, apenas retornar um **IAsyncEnumerable** já basta.
 
+![Browser](./Assets/asyncenum.gif)
+
 ## Exemplo
 
 Rotinas inseridas no controlador **Data**:
