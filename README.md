@@ -16,6 +16,8 @@
 
 > [Visão geral do global.json](./global-json)
 
+> [WebSockets](./web-sockets/)
+
 #
 
 [Themes of .Net](https://themesof.net/)
